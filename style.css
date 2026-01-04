@@ -31,7 +31,7 @@ body {
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('./ing/zamek.jpg');
+                url('zamek.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -457,4 +457,5 @@ footer {
     .kontener-kontaktu h2 {
         font-size: 20px;
     }
+
 }
