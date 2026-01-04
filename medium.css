@@ -1,0 +1,57 @@
+/* Style dla ekranów od 768px */
+@media (min-width: 768px) {
+    .kontener-atrakcji {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    #atrakcja3 {
+        grid-column: 1 / span 2;
+    }
+
+    .kontener-komentarzy {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .komentarz {
+        flex: 1 1 calc(50% - 16px);
+        min-width: 250px;
+    }
+
+    .grupa-formularza {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .grupa-formularza input[type="text"],
+    .grupa-formularza input[type="email"] {
+        width: calc(50% - 8px);
+        display: inline-block;
+        margin-right: 0;
+        font-family: "Bitcount Grid Single", system-ui;
+    }
+
+    .przycisk {
+        width: auto;
+        max-width: 300px;
+    }
+
+    .glowna-nawigacja ul {
+        gap: 32px;
+    }
+
+    .kontener-naglowka h1 {
+        font-size: 40px;
+    }
+
+    .sekcja-atrakcji h2,
+    .kontener-newslettera h2,
+    .sekcja-faq h2,
+    .sekcja-mapy h2,
+    .sekcja-komentarzy h2 {
+        font-size: 32px;
+    }
+}

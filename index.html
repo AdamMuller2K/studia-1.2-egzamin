@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:slnt,wght@-8..0,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/c8afd23d2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:768px)"
+      href="medium.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:992px)"
+      href="large.css"
+    />
+
+    <link rel="shortcut icon" href="./ing/ikona.png" type="image/x-icon" />
+
+    <title>Przewodnik po Malborku</title>
+  </head>
+  <body>
+    <header>
+      <div class="kontener-naglowka">
+        <h1>Poznaj z nami miasto słynące z największego zamku krzyżackiego</h1>
+        <p>Malbork i okolice - historia, zabytki i atrakcje</p>
+      </div>
+    </header>
+
+    <nav class="glowna-nawigacja">
+      <ul>
+        <li>
+          <a href="#atrakcje"><i class="fas fa-landmark"></i> Atrakcje</a>
+        </li>
+        <li>
+          <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+        </li>
+        <li>
+          <a href="#mapa"><i class="fas fa-map-marked-alt"></i> Mapa</a>
+        </li>
+        <li>
+          <a href="#kontakt"><i class="fas fa-envelope"></i> Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="atrakcje" class="sekcja-atrakcji">
+        <h2>Miejsca warte odwiedzenia</h2>
+        <div class="kontener-atrakcji">
+          <article class="karta-atrakcji" id="atrakcja1">
+            <h3>Zamek w Malborku</h3>
+            <img src="./ing/zamek.jpg" alt="Zamek w Malborku" />
+            <p>
+              Największy na świecie zamek pod względem powierzchni, wpisany na
+              listę UNESCO. Dawna siedziba wielkich mistrzów zakonu krzyżackiego
+              i rezydencja królów Polski.<br /><br />
+            </p>
+            <div class="info-atrakcji">
+              <p>
+                <strong>Godziny otwarcia:</strong> 9:00-19:00 (maj-wrzesień)
+              </p>
+              <p><strong>Cena biletu:</strong> 40 zł normalny, 30 zł ulgowy</p>
+            </div>
+          </article>
+
+          <article class="karta-atrakcji" id="atrakcja2">
+            <h3>Dinopark Malbork</h3>
+            <img src="./ing/dinopark.jpg" alt="dinopark w malborku" />
+            <p>
+              Odkryj świat prehistorycznych olbrzymów. Spaceruj wśród
+              realistycznych, ruchomych dinozaurów, ucz się przez zabawę na
+              leśnej ścieżce edukacyjnej i korzystaj z wielu dodatkowych
+              atrakcji dla całej rodziny.
+            </p>
+            <div class="info-atrakcji">
+              <p><strong>Godziny otwarcia:</strong> 10:00-18:00</p>
+              <p><strong>Cena Biletu:</strong> 84 zł normalny, 74 zł ulgowy</p>
+            </div>
+          </article>
+
+          <article class="karta-atrakcji" id="atrakcja3">
+            <h3>Muzeum Zamkowe</h3>
+            <img src="./ing/zbrojownia.jpg" alt="Muzeum Zamkowe w Malborku" />
+            <p>
+              Wspaniała kolekcja militariów, sztuki sakralnej i przedmiotów
+              codziennego użytku z czasów krzyżackich. W sezonie letnim
+              organizowane są nocne zwiedzania z pochodniami.
+            </p>
+            <div class="info-atrakcji">
+              <p>
+                <strong>Godziny otwarcia:</strong> 10:00-16:00 (pn-pt),
+                10:00-18:00 (sb-nd)
+              </p>
+              <p><strong>Cena biletu:</strong> Wliczona w bilet do zamku</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sekcja-komentarzy">
+        <h2>Zobacz co o nas piszą</h2>
+        <div class="kontener-komentarzy" id="komentarze">
+          <div class="komentarz" id="komentarz1">
+            <i class="fas fa-quote-left"></i>
+            <p>
+              Fantastyczne zwiedzanie z przewodnikiem! Dowiedziałem się wielu
+              ciekawostek o zakonie krzyżackim.
+            </p>
+            <div class="autor-komentarza">- Jan K., Warszawa</div>
+          </div>
+          <div class="komentarz" id="komentarz2">
+            <i class="fas fa-quote-left"></i>
+            <p>
+              Zamek robi ogromne wrażenie, zwłaszcza widziany nocą podczas
+              pokazu świateł. Polecam każdemu!
+            </p>
+            <div class="autor-komentarza">- Anna M., Kraków</div>
+          </div>
+          <div class="komentarz" id="komentarz3">
+            <i class="fas fa-quote-left"></i>
+            <p>
+              Profesjonalna obsługa, doskonała organizacja wycieczki po zamku i
+              okolicach. Na pewno wrócimy!
+            </p>
+            <div class="autor-komentarza">- Piotr Z., Gdańsk</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sekcja-newslettera">
+        <div class="kontener-newslettera">
+          <h2>NEWSLETTER</h2>
+          <p>
+            Zapisz się, aby otrzymywać informacje o nowych trasach i
+            wydarzeniach
+          </p>
+          <form action="#" method="post" id="formularz-newslettera">
+            <div class="grupa-formularza">
+              <input
+                type="text"
+                placeholder="Imię"
+                id="pole-imienia"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                id="pole-email"
+                required
+              />
+            </div>
+            <div class="grupa-formularza">
+              <label>
+                <input type="checkbox" id="checkbox-regulamin" required />
+                Zapoznałem się z regulaminem i go akceptuję
+              </label>
+            </div>
+            <button type="submit" class="przycisk">
+              <i class="fas fa-paper-plane"></i> Zapisz się
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section id="faq" class="sekcja-faq">
+        <h2>FAQ - Najczęściej zadawane pytania</h2>
+        <div class="kontener-faq">
+          <details class="element-faq">
+            <summary class="przycisk-akordeonu">
+              Jakie są najlepsze miejsca do odwiedzenia w Malborku?
+              <i class="fas fa-chevron-down"></i>
+            </summary>
+            <div class="tresc-faq">
+              <p>
+                Oprócz zamku warto zobaczyć Stare Miasto, Bramę Mariacką,
+                kościół św. Jana, Młyn Zamkowy oraz przejść się bulwarami nad
+                Nogatem.
+              </p>
+            </div>
+          </details>
+
+          <details class="element-faq">
+            <summary class="przycisk-akordeonu">
+              Kiedy jest najlepszy czas na zwiedzanie Malborka?
+              <i class="fas fa-chevron-down"></i>
+            </summary>
+            <div class="tresc-faq">
+              <p>
+                Najlepszy czas to wiosna (maj-czerwiec) i wczesna jesień
+                (wrzesień), kiedy pogoda jest przyjemna, a zamek mniej oblegany
+                przez turystów. Latem odbywają się inscenizacje bitwy pod
+                Grunwaldem.
+              </p>
+            </div>
+          </details>
+
+          <details class="element-faq">
+            <summary class="przycisk-akordeonu">
+              Jakie atrakcje znajdują się w okolicach Malborka?
+              <i class="fas fa-chevron-down"></i>
+            </summary>
+            <div class="tresc-faq">
+              <p>
+                Warto odwiedzić Sztum (zamek pokrzyżacki), Kwidzyn (katedrę i
+                zamek), Gniew (zamek krzyżacki) oraz Żuławy Wiślane z unikatową
+                architekturą mennonicką.
+              </p>
+            </div>
+          </details>
+
+          <details class="element-faq">
+            <summary class="przycisk-akordeonu">
+              Czy są dostępne zniżki dla grup?<br />
+              <i class="fas fa-chevron-down"></i>
+            </summary>
+            <div class="tresc-faq">
+              <p>
+                Tak, dla grup powyżej 15 osób przysługuje zniżka 20%. Dzieci do
+                7 lat mają wstęp bezpłatny, a uczniowie i studenci ulgę 50%.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="mapa" class="sekcja-mapy">
+        <h2>Mapa Malborka</h2>
+        <div class="kontener-mapy">
+          <iframe
+            id="mapa-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23575.90781201952!2d19.025550330273124!3d54.03743198740215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd73a7a3f5922f%3A0x9e0906bfc6d5bfe7!2sMalbork!5e0!3m2!1spl!2spl!4v1761734975300!5m2!1spl!2spl"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa Malborka"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <section id="kontakt" class="sekcja-kontaktu">
+        <div class="kontener-kontaktu" id="kontener-kontakt">
+          <h2>Kontakt do nas</h2>
+          <div class="info-kontaktu">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> ul. Zamkowa 37, 21-420
+              Malbork
+            </p>
+            <p><i class="fas fa-phone"></i> 040 123 4567</p>
+            <p><i class="fas fa-envelope"></i> zwiedzanie.malbork@nwm.com</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sekcja-social">
+        <div class="rozdzielacz-social" id="linia1"></div>
+        <h3>Obserwuj nas na naszych socialach:</h3>
+        <div class="ikony-social" id="linia2">
+          <a
+            href="https://www.youtube.com"
+            aria-label="YouTube"
+            class="ikona-social"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.TikTok.com"
+            aria-label="TikTok"
+            class="ikona-social"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+          <a
+            href="https://www.instagram.com"
+            aria-label="Instagram"
+            class="ikona-social"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com"
+            aria-label="Facebook"
+            class="ikona-social"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="info-stopki">
+        <p>Projekt WSB Merito 2025/2026</p>
+        <p>Autor: Adam Müller</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

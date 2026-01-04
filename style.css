@@ -1,0 +1,460 @@
+:root {
+    --primary-color: #8b4513;
+    --secondary-color: #d2691e;
+    --accent-color: #a0522d;
+    --light-color: #f5f5dc;
+    --dark-color: #2f4f4f;
+    --text-color: #333;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--light-color);
+    font-family: "Bitcount Grid Single", system-ui;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: var(--shadow);
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('./ing/zamek.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.kontener-naglowka h1 {
+    font-family: "Bitcount Grid Single", system-ui;
+    font-size: 32px;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.kontener-naglowka p {
+    font-size: 19px;
+    opacity: 0.9;
+}
+
+.glowna-nawigacja {
+    background-color: var(--primary-color);
+    padding: 16px;
+}
+
+.glowna-nawigacja ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 24px;
+}
+
+.glowna-nawigacja a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.glowna-nawigacja a:hover {
+    background-color: var(--secondary-color);
+}
+
+.sekcja-atrakcji {
+    padding: 32px 16px;
+}
+
+.sekcja-atrakcji h2 {
+    text-align: center;
+    font-family: "Bitcount Grid Single", system-ui;
+    color: var(--dark-color);
+    margin-bottom: 32px;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.kontener-atrakcji {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.karta-atrakcji {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.karta-atrakcji:hover {
+    transform: translateY(-5px);
+}
+
+.karta-atrakcji h3 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 16px;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.karta-atrakcji img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.karta-atrakcji p {
+    padding: 16px;
+}
+
+.info-atrakcji {
+    background-color: #f9f9f9;
+    padding: 16px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+
+.info-atrakcji p {
+    padding: 3px 0;
+}
+
+.sekcja-komentarzy {
+    padding: 32px 16px;
+    background-color: #f8f8f8;
+}
+
+.sekcja-komentarzy h2 {
+    text-align: center;
+    font-family: "Bitcount Grid Single", system-ui;
+    color: var(--dark-color);
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+
+.kontener-komentarzy {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.komentarz {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.komentarz i.fa-quote-left {
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.komentarz p {
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.autor-komentarza {
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: right;
+}
+
+.sekcja-newslettera {
+    padding: 32px 16px;
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.kontener-newslettera {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.kontener-newslettera h2 {
+    font-family: "Bitcount Grid Single", system-ui;
+    margin-bottom: 16px;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.kontener-newslettera > p {
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+
+.grupa-formularza {
+    margin-bottom: 16px;
+}
+
+.grupa-formularza input[type="text"],
+.grupa-formularza input[type="email"] {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Bitcount Grid Single", system-ui;
+}
+
+.grupa-formularza label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.przycisk {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-family: "Bitcount Grid Single", system-ui;
+}
+
+.przycisk:hover {
+    background-color: var(--accent-color);
+}
+
+.sekcja-faq {
+    padding: 32px 16px;
+}
+
+.sekcja-faq h2 {
+    text-align: center;
+    font-family: "Bitcount Grid Single", system-ui;
+    color: var(--dark-color);
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+
+.kontener-faq {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.element-faq {
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.przycisk-akordeonu {
+    background-color: #f1f1f1;
+    padding: 16px;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.przycisk-akordeonu i {
+    transition: transform 0.3s;
+}
+
+.element-faq[open] .przycisk-akordeonu i {
+    transform: rotate(180deg);
+}
+
+.tresc-faq {
+    padding: 16px;
+    background-color: white;
+    font-family: "Bitcount Grid Single", system-ui;
+}
+
+.sekcja-mapy {
+    padding: 32px 16px;
+}
+
+.sekcja-mapy h2 {
+    text-align: center;
+    font-family: "Bitcount Grid Single", system-ui;
+    color: var(--dark-color);
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.kontener-mapy {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.sekcja-kontaktu {
+    padding: 32px 16px;
+}
+
+.kontener-kontaktu {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 32px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.kontener-kontaktu h2 {
+    font-family: "Bitcount Grid Single", system-ui;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.info-kontaktu p {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: "Bitcount Grid Single", system-ui;
+}
+
+.sekcja-social {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.rozdzielacz-social {
+    height: 2px;
+    background-color: #ddd;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.sekcja-social h3 {
+    font-family: "Bitcount Grid Single", system-ui;
+    color: var(--dark-color);
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.ikony-social {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.ikona-social {
+    color: var(--dark-color);
+    font-size: 29px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.ikona-social:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 32px 16px;
+    text-align: center;
+    font-family: "Bitcount Grid Single", system-ui;
+    width: 100%;
+}
+
+.info-stopki {
+    margin-bottom: 16px;
+}
+
+.info-stopki p {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .kontener-naglowka h1 {
+        font-size: 24px;
+    }
+    
+    .kontener-naglowka p {
+        font-size: 16px;
+    }
+    
+    .glowna-nawigacja ul {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    
+    .sekcja-atrakcji h2,
+    .kontener-newslettera h2,
+    .sekcja-faq h2,
+    .sekcja-mapy h2,
+    .kontener-kontaktu h2 {
+        font-size: 24px;
+    }
+    
+    .karta-atrakcji h3 {
+        font-size: 18px;
+    }
+    
+    .ikony-social {
+        gap: 16px;
+    }
+    
+    .kontener-kontaktu {
+        padding: 24px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kontener-naglowka h1 {
+        font-size: 20px;
+    }
+    
+    .sekcja-atrakcji h2,
+    .kontener-newslettera h2,
+    .sekcja-faq h2,
+    .sekcja-mapy h2,
+    .kontener-kontaktu h2 {
+        font-size: 20px;
+    }
+}

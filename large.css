@@ -1,0 +1,75 @@
+/* Style dla ekranów od 992px */
+@media (min-width: 992px) {
+    .kontener-atrakcji {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #atrakcja3 {
+        grid-column: auto;
+    }
+
+    .kontener-komentarzy {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .komentarz {
+        flex: 1;
+        max-width: 32%;
+    }
+
+    .glowna-nawigacja ul {
+        gap: 48px;
+    }
+
+    .kontener-naglowka h1 {
+        font-size: 48px;
+    }
+
+    .kontener-newslettera {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        text-align: left;
+        align-items: center;
+    }
+
+    .kontener-newslettera h2,
+    .kontener-newslettera > p {
+        grid-column: 1 / span 2;
+    }
+
+    .grupa-formularza {
+        margin-bottom: 0;
+    }
+
+    .karta-atrakcji img {
+        height: 300px;
+    }
+
+    .kontener-faq {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .element-faq {
+        margin-bottom: 0;
+    }
+
+    .kontener-kontaktu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        padding: 48px 32px;
+    }
+
+    .info-kontaktu {
+        flex: 1;
+    }
+
+    .info-kontaktu p {
+        justify-content: flex-start;
+    }
+}
